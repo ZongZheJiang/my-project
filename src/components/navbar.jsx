@@ -10,17 +10,13 @@ const NavBar = () => {
     }
 
     return (
-        <div className='w-full h-[80px] z-10 bg-white fixed drop-shadow-lg'>
+        <div className='w-full h-[80px] z-10 bg-white drop-shadow-lg'>
             <div className='container mx-auto flex justify-between items-center w-full h-full'>
                 <div>
                     <Link to="/"><img src={logo} alt='logo' className='w-[50px] h-[50px]' /></Link>
                 </div>
-                <div className='flex items-center'>
-                    <div className='flex items-center'>
-                        <button className='bg-transparent text-black px-8 py-3 hidden md:block'>Projects</button>
-                        <button className='px-8 py-3 hidden md:block'><Link to="/about">About Me</Link></button>
-                    </div>
-                </div>
+                <button class="btn btn-soft">Projects</button>
+                <button class="btn btn-soft"><Link to="/about">About Me</Link></button>
                 <div onClick={handleClick}>
                     <img src={!toggle?menu:close} alt='menu' className='w-[30px] h-[30px]' />
                 </div>
