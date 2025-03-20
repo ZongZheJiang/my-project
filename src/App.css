@@ -49,3 +49,9 @@
 .about-content {
   margin-top: 100px; /* Adjust based on the height of your NavBar */
 }
+
+.scaled-image {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 300px; /* Optional: Set a maximum width */
+}
