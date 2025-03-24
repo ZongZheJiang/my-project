@@ -15,7 +15,7 @@ const NavBar = () => {
                 <div>
                     <Link to="/"><img src={logo} alt='logo' className='w-[50px] h-[50px]' /></Link>
                 </div>
-                <button class="btn btn-soft">Projects</button>
+                <button class="btn btn-soft"><Link to="/projects">Projects</Link></button>
                 <button class="btn btn-soft"><Link to="/about">About Me</Link></button>
                 <div onClick={handleClick}>
                     <img src={!toggle?menu:close} alt='menu' className='w-[30px] h-[30px]' />

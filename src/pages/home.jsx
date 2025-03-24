@@ -1,7 +1,7 @@
 import React from 'react';
-import {Card} from "../components";
-import hacxPic from "../assets/hacx-pic.jpg";
-import thrivePic from "../assets/thrive-pic.jpeg";
+// import {Card} from "../components";
+import selfPortrait from "../assets/self-portrait.jpeg";
+import {Hero} from "../components"
 
 const Home = () => {
 
@@ -9,23 +9,11 @@ const Home = () => {
 
   return (
     <div className="container mx-auto" style={{marginTop: 70}}>
-      <div className="grid grid-cols-3 gap-4" >
-        <Card 
-          title="First Runner-Up in HacX: Hack for Public Safety"
-          body="Created Prototypes for SCDF DART Team's use during Rescue Missions from height to minimise property damage"
-          imageSrc={hacxPic}
-        />
-        <Card 
-          title=""
-          body=""
-          imageSrc={thrivePic}
-        />
-        <Card           
-          title=""
-          body=""
-          imageSrc=""
-        />
-      </div>
+      <Hero
+        title="Welcome to my Portfolio"
+        body="I am a Year 2 Computer Science student from Nanyang Technological University. I enjoy creating applications."
+        imageSrc={selfPortrait}
+      />
     </div> 
   )
 }
