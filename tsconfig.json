@@ -22,8 +22,10 @@
   },
   "include": [
     "src"
-  ], 
-  "files": [
-    "./src/daisyui.d.ts" 
+  ],
+  "exclude": [
+    "node_modules",
+    "tailwind.config.js",
+    "postcss.config.js"
   ]
 }
